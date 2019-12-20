@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".views.MoreFragment">
+
+    <TextView
+        android:id="@+id/fragment_more_header"
+        style="@style/HeaderStyle"
+        android:layout_alignParentTop="true"
+        android:text="more" />
+
+    <FrameLayout
+        android:id="@+id/fragment_more_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_more_header"
+        android:background="@drawable/gradient_blue_horizontal"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_more_iv_profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/profile_pic" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_more_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_more_fl"
+        android:background="#F1F9FF"
+        android:padding="@dimen/padding_more_fragment">
+
+        <LinearLayout
+            android:layout_width="@dimen/no_size"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_more_tv_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="2"
+                android:text="John Doe"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_extra_extra_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fragment_more_tv_profile_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Alexandria"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_more_btn_profile_edit"
+            android:layout_width="@dimen/no_size"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:text="edit"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fragment_more_ll"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_more_fragment"
+        android:paddingRight="@dimen/padding_more_fragment">
+
+        <TextView
+            android:id="@+id/fragment_more_tv_notification"
+            style="@style/MoreFragmentItemsListFormat"
+            android:drawableStart="@drawable/ic_bell"
+            android:text="@string/notifications" />
+
+        <TextView
+            android:id="@+id/fragment_more_tv_free_session"
+            style="@style/MoreFragmentItemsListFormat"
+            android:drawableStart="@drawable/ic_coupon"
+            android:text="@string/free_sessions" />
+
+        <TextView
+            android:id="@+id/fragment_more_tv_privacy_setting"
+            style="@style/MoreFragmentItemsListFormat"
+            android:drawableStart="@drawable/ic_lock"
+            android:text="Privacy Settings" />
+
+        <TextView
+            android:id="@+id/fragment_more_tv_help"
+            style="@style/MoreFragmentItemsListFormat"
+            android:drawableStart="@drawable/ic_info"
+            android:text="@string/help" />
+
+        <TextView
+            android:id="@+id/fragment_more_tv_sign_out"
+            style="@style/MoreFragmentItemsListFormat"
+            android:drawableStart="@drawable/ic_logout"
+            android:text="@string/sign_out"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_tutor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_extra_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        app:cardCornerRadius="@dimen/roundness_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp">
+
+            <TextView
+                android:id="@+id/item_tutor_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="Tutor's Name"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_tutor_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tutor_tv_name"
+                android:text="Tutor's Title"
+                android:textColor="@color/text_body" />
+
+            <TextView
+                android:id="@+id/item_tutor_tv_experience_hours"
+                style="@style/CardBodyStyle"
+                android:layout_below="@+id/item_tutor_tv_title"
+                android:drawablePadding="@dimen/margin_extra_small"
+                android:drawableStart="@drawable/ic_extra_small_black_clock"
+                android:text="Tutor's Experience Hours" />
+
+            <TextView
+                android:id="@+id/item_tutor_tv_location"
+                style="@style/CardBodyStyle"
+                android:layout_below="@+id/item_tutor_tv_experience_hours"
+                android:drawablePadding="@dimen/margin_extra_small"
+                android:drawableStart="@drawable/ic_extra_small_black_location"
+                android:text="Tutor's Location" />
+
+            <TextView
+                android:id="@+id/item_tutor_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/item_tutor_tv_experience_hours"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:gravity="end"
+                android:text="Tutor's Price"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/text_size_large" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_tutor_iv_profile_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_small"
+        android:elevation="@dimen/margin_extra_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_pic" />
+
+</RelativeLayout>

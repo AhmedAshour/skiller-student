@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+        <item name="cardViewStyle">@style/CardView</item>
+
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="fontFamily">@font/montserrat</item>
+
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/color_black</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--formats-->
+    <style name="CardFormat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_extra_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+    </style>
+
+    <style name="CardHeaderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/text_header</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardBodyStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_body</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_extra_small</item>
+    </style>
+
+    <style name="MoreFragmentItemsListFormat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_grey</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="FoldingCellStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+    </style>
+
+    <style name="FoldingCellContentViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+    </style>
+
+    <style name="HeaderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_blue_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="android:windowBackground">@drawable/login_background</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textColorHighlight">@color/color_white</item>
+        <item name="android:textColorPrimary">@color/color_white</item>
+        <item name="android:textColorSecondary">@color/color_white</item>
+        <item name="android:textColorHint">@color/color_white</item>
+        <item name="android:textColorLink">@color/color_white</item>
+        <item name="android:textColorTertiary">@color/color_white</item>
+        <item name="android:actionBarStyle">@style/FirebaseAuthActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="FirebaseAuthActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/color_white</item>
+
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item
+        android:id="@+id/navigation_trending"
+        android:icon="@drawable/ic_navigation_black_trending"
+        android:title="@string/navigation_trending" />-->
+
+    <item
+        android:id="@+id/navigation_skills"
+        android:icon="@drawable/ic_skills"
+        android:title="@string/navigation_skills" />
+
+    <item
+        android:id="@+id/navigation_lessons"
+        android:icon="@drawable/ic_lessons"
+        android:title="@string/navigation_lessons" />
+    <item
+        android:id="@+id/navigation_academy"
+        android:icon="@drawable/ic_academy"
+        android:title="@string/navigation_academy" />
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/navigation_more" />
+
+
+
+</menu>

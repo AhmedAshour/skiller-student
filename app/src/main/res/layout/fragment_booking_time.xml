@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_vertical"
+    tools:context=".views.booking.BookingTimeFragment">
+
+    <TextView
+        android:id="@+id/fragment_booking_time_tv_num_3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_booking"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/margin_top_booking_line"
+        android:layout_toRightOf="@+id/fragment_booking_time_tv_num_3"
+        android:background="@color/color_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/margin_top_booking_line"
+        android:layout_toLeftOf="@+id/fragment_booking_time_tv_num_3"
+        android:background="@color/color_white" />
+
+    <TextView
+        android:id="@+id/fragment_booking_time_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_booking_time_tv_num_3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="time"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_booking_title" />
+
+    <TimePicker
+        android:id="@+id/fragment_booking_time_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_booking_time_name"
+        android:layout_alignParentStart="true"
+        android:headerBackground="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/btn_next_fragment_booking_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:elevation="0dp"
+        android:textStyle="bold"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".views.booking.PrivatePlaceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fragment_booking_place_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginTop="37dp"/>
+
+        <EditText
+            android:id="@+id/fragment_booking_place_district_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="District"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/fragment_booking_place_floor_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Floor"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/fragment_booking_place_apart_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apartment No."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/fragment_booking_place_more_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="More Info"
+            android:inputType="textImeMultiLine" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next_fragment_booking_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:elevation="0dp"
+        android:textStyle="bold"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

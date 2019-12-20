@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeActivity">
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_login">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Skiller"
+            android:textColor="@color/color_white"
+            android:textSize="85sp"
+            tools:fontFamily="@font/lobster" />
+
+        <Button
+            android:id="@+id/btn_phone_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:text="@string/continue_with_phone_number"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/btn_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_phone_login"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:text="@string/continue_with_facebook"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/btn_google_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_email_login"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corners_transparent"
+            android:text="@string/continue_with_google"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white" />
+
+    </RelativeLayout>-->
+
+</FrameLayout>

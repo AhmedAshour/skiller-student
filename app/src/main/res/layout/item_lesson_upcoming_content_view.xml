@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lesson_upcoming_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        style="@style/FoldingCellContentViewStyle"
+        layout="@layout/item_lesson_content_view_cv_info_tutor" />
+
+    <include
+        style="@style/FoldingCellContentViewStyle"
+        layout="@layout/item_lesson_content_view_cv_info_lesson" />
+
+    <include
+        style="@style/FoldingCellContentViewStyle"
+        layout="@layout/item_lesson_content_view_cv_info_payment" />
+
+    <include
+        style="@style/FoldingCellContentViewStyle"
+        layout="@layout/item_cv_notes" />
+
+    <Button
+        android:id="@+id/item_lesson_upcoming_content_view_btn_unbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_small_red"
+        android:text="unbook"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

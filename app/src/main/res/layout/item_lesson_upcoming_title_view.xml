@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lesson_upcoming_title_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_title_view_height">
+
+    <include layout="@layout/item_lesson_title_view_cv" />
+
+    <Button
+        android:id="@+id/item_lesson_upcoming_title_view_btn_unbook"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@drawable/rounded_corners_small_red"
+        android:text="unbook"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_vertical"
+    tools:context=".views.booking.BookingConfirmationFragment">
+
+    <TextView
+        android:id="@+id/fragment_booking_payment_tv_num_5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_booking"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/margin_top_booking_line"
+        android:layout_toStartOf="@+id/fragment_booking_payment_tv_num_5"
+        android:background="@color/color_white" />
+
+    <TextView
+        android:id="@+id/tv_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_booking_payment_tv_num_5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Confirmation"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_booking_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_booking_payment_ll"
+        android:layout_below="@+id/tv_confirmation"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="TUTOR"
+                android:textColor="@color/color_white_74"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_confirmation_fragment"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:elevation="@dimen/margin_extra_small"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_pic" />
+
+                <TextView
+                    android:id="@+id/tv_tutor_name_confirmation_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/civ_confirmation_fragment"
+                    android:text="Tutor's Name"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tutor_title_confirmation_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tutor_name_confirmation_fragment"
+                    android:layout_toRightOf="@+id/civ_confirmation_fragment"
+                    android:text="Tutor's Title"
+                    android:textColor="@color/color_white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="PACKAGE"
+                android:textColor="@color/color_white_74"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/courses_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_extra_small"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:contentPadding="@dimen/margin_large">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_course_title_confirmation_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Course Title"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_course_price_confirmation_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Price"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_num_sessions_confirmation_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tv_course_title_confirmation_fragment"
+                        android:text="Num Sessions" />
+
+                    <TextView
+                        android:id="@+id/tv_course_num_hours_confirmation_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_num_sessions_confirmation_fragment"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_toRightOf="@+id/tv_num_sessions_confirmation_fragment"
+                        android:text="Total Hrs" />
+
+                    <TextView
+                        android:id="@+id/tv_course_num_hours_per_session_confirmation_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tv_num_sessions_confirmation_fragment"
+                        android:text="Hrs per session" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="DATE"
+                android:textColor="@color/color_white_74"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date_confirmation_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="DATE"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="LOCATION"
+                android:textColor="@color/color_white_74"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_location_confirmation_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="LOCATION"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_booking_payment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <Button
+            android:id="@+id/btn_request_confirmation_fragment"
+            android:layout_width="@dimen/no_size"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_extra_small"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_green"
+            android:text="Request"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel_confirmation_fragment"
+            android:layout_width="@dimen/no_size"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_extra_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_transparent"
+            android:text="cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

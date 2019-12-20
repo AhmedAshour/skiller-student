@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardFormat"
+    app:cardCornerRadius="@dimen/roundness_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/card_tutor_review_profile_pic"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="2dp"
+                android:elevation="2dp"
+                android:src="@drawable/profile_pic" />
+
+            <TextView
+                android:id="@+id/card_tutor_review_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/card_tutor_review_profile_pic"
+                android:text="John Doe"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_tutor_review_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:text="17 Nov. 2017"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/card_tutor_review_inner_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Princess of House Targaryen, Daenerys lives in exile in Essos with her advisors and dragons. Dany rallied the Unsullied of Astapor to her cause and continues to grow the army she needs to take back the throne."
+            android:textColor="@color/text_body"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

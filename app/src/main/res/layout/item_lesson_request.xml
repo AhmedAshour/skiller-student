@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_lesson_request_fc"
+    style="@style/FoldingCellStyle"
+    folding-cell:animationDuration="1000"
+    folding-cell:backSideColor="#dbe8ea">
+
+    <FrameLayout
+        android:id="@+id/item_lesson_request_fc_fl_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/item_lesson_request_content_view" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_lesson_request_fc_fl_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/item_lesson_request_title_view" />
+
+    </FrameLayout>
+
+</com.ramotion.foldingcell.FoldingCell>

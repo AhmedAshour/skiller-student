@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_skill_cv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_skill_height">
+
+
+    <ImageView
+        android:id="@+id/item_skill_iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/item_skill_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/skill"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

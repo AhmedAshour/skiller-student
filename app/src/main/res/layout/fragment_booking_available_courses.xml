@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_vertical"
+    tools:context=".views.booking.BookingAvailableCoursesFragment">
+
+    <TextView
+        android:id="@+id/fragment_booking_date_tv_num_1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_booking"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/margin_top_booking_line"
+        android:layout_toRightOf="@+id/fragment_booking_date_tv_num_1"
+        android:background="@color/color_white" />
+
+    <TextView
+        android:id="@+id/fragment_booking_date_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_booking_date_tv_num_1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="lessons"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_booking_title" />
+
+    <TextView
+        android:id="@+id/fragment_booking_choose_a_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Choose a package"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_below="@+id/fragment_booking_date_name"
+        android:textColor="@color/color_white"
+        android:textSize="18sp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_available_courses"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/fragment_booking_choose_a_package"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/fragment_booking_lessons_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:elevation="0dp"
+        android:textStyle="bold"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

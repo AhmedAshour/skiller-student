@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#18bee9" />
+    <corners
+        android:bottomLeftRadius="@dimen/roundness_card"
+        android:topLeftRadius="@dimen/roundness_card" />
+</shape>

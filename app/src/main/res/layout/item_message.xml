@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/margin_large"
+    android:paddingStart="@dimen/margin_large"
+    android:paddingTop="@dimen/margin_large">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_message_iv_student_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_toEndOf="@+id/item_message_iv_student_profile_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_message_tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:layout_weight="1"
+                android:text="Student's Name"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_message_tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/margin_extra_small"
+                android:text="Last message sent"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_message_v_notification"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_cyan" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="#70707070" />
+
+</LinearLayout>

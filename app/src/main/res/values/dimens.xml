@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="card_corner_radius">6dp</dimen>
+
+    <dimen name="no_size">0dp</dimen>
+
+    <dimen name="margin_text">16dp</dimen>
+
+    <dimen name="margin_activity_horizontal">16dp</dimen>
+    <dimen name="margin_activity_vertical">16dp</dimen>
+    <dimen name="margin_fab">16dp</dimen>
+    <dimen name="margin_card">18dp</dimen>
+    <dimen name="margin_login">32dp</dimen>
+
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">20dp</dimen>
+    <dimen name="margin_huge">32</dimen>
+
+    <dimen name="padding_more_fragment">32dp</dimen>
+    <dimen name="padding_card">18dp</dimen>
+
+    <dimen name="roundness_card">8dp</dimen>
+
+    <dimen name="item_title_view_height">115dp</dimen>
+    <dimen name="item_skill_height">120dp</dimen>
+    <dimen name="item_skill_circled">150dp</dimen>
+    <dimen name="item_title_view_btn_expand_width">48dp</dimen>
+    <dimen name="item_tutor_height">140dp</dimen>
+
+    <dimen name="tutor_trending_card_width">150dp</dimen>
+    <dimen name="tutor_trending_card_height">175dp</dimen>
+
+    <dimen name="text_size_extra_small">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_extra_extra_large">22sp</dimen>
+    <dimen name="margin_top_booking">16dp</dimen>
+    <dimen name="text_size_booking_title">24sp</dimen>
+    <dimen name="margin_top_booking_line">48dp</dimen>
+
+</resources>
