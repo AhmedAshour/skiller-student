@@ -11,7 +11,9 @@ This allows these undergraduates to work as a part-time tutor with us. As it is 
 We choose the tutors to be undergraduates or fresh graduates so that the age gap between them and the students will be very small so that the tutors can transfer the knowledge to them easily.
 
 The platform consists of **two applications**:
-**Students App**:
+
+**Students App**
+
 The first one is for students so that they can:
 - Search for what they want to learn and find a list of tutors to choose from.
 - Contains detailed tutors profiles which contain reviews, rating, what courses/sessions they give, their education and experience.
