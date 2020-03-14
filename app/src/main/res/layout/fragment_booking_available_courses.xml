@@ -48,7 +48,7 @@
         android:layout_below="@+id/fragment_booking_date_name"
         android:textColor="@color/color_white"
         android:textSize="18sp" />
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_available_courses"
         android:layout_width="match_parent"
         android:layout_below="@+id/fragment_booking_choose_a_package"
