@@ -12,7 +12,7 @@ import me.ahmedashour.skiller.model.misc.Education;
 import me.ahmedashour.skiller.model.misc.Experience;
 import me.ahmedashour.skiller.model.misc.Feedback;
 import me.ahmedashour.skiller.model.misc.Name;
-import me.ahmedashour.skiller.model.misc.Skill;
+import me.ahmedashour.skiller.model.data.Skill;
 import me.ahmedashour.skiller.model.utils.DatabaseAccessibleObject;
 
 public abstract class User implements Serializable, DatabaseAccessibleObject {

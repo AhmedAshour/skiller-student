@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="me.ahmedashour.skiller">
-
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".Skiller"
         android:theme="@style/AppTheme">
         <activity
             android:name=".views.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".views.HomeActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,27 +30,32 @@
         <activity android:name=".views.DummyActivity" />
         <activity
             android:name=".views.tutors.TutorsActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".views.booking.BookingActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".views.tutors.TutorProfileActivity"
             android:label="@string/title_activity_tutor_profile"
             android:parentActivityName=".views.tutors.TutorsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="me.ahmedashour.skiller.views.tutors.TutorsActivity" />
         </activity>
         <activity
             android:name=".views.StudentInfoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".views.more.ProfileEditActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".views.more.ProfilePrivacySettingsActivity"></activity>
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".views.more.ProfilePrivacySettingsActivity" />
     </application>
 
 </manifest>

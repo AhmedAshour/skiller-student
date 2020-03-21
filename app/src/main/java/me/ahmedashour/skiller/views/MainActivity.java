@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 import me.ahmedashour.skiller.R;
 import me.ahmedashour.skiller.util.BottomNavigationViewHelper;
 import me.ahmedashour.skiller.views.fragments.AcademyFragment;
-import me.ahmedashour.skiller.views.fragments.SkillsFragment;
+import me.ahmedashour.skiller.skills.SkillsFragment;
 import me.ahmedashour.skiller.views.lessons.LessonsFragment;
 
 public class MainActivity extends AppCompatActivity {
