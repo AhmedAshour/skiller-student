@@ -33,8 +33,10 @@ class SkillsAdapter : ListAdapter<Skill, SkillsAdapter.ViewHolder>(SkillDiffUtil
         }
 
         fun bindView(currentItem: Skill) {
-            binding.itemSkillTvTitle.text = currentItem.title
-            Glide.with(binding.root).load(currentItem.backgroundImage).into(binding.itemSkillIvBackground)
+            /*binding.itemSkillTvTitle.text = currentItem.title
+            Glide.with(binding.root).load(currentItem.backgroundImage).into(binding.itemSkillIvBackground)*/
+            binding.skill = currentItem
+            binding.executePendingBindings()
         }
     }
 
@@ -43,12 +45,12 @@ class SkillsAdapter : ListAdapter<Skill, SkillsAdapter.ViewHolder>(SkillDiffUtil
 
 class SkillDiffUtilCallback : DiffUtil.ItemCallback<Skill>() {
     override fun areItemsTheSame(oldItem: Skill, newItem: Skill): Boolean {
-        Timber.d("is ${oldItem.title} the same as ${newItem.title} ${oldItem.title == newItem.title}")
+        Timber.i("is ${oldItem.title} the same as ${newItem.title} ${oldItem.title == newItem.title}")
         return oldItem.title == newItem.title
     }
 
     override fun areContentsTheSame(oldItem: Skill, newItem: Skill): Boolean {
-        Timber.d("is ${oldItem.title} content same as ${newItem.title} ${oldItem.title == newItem.title}")
+        Timber.i("is ${oldItem.title} content same as ${newItem.title} ${oldItem.title == newItem.title}")
         return oldItem == newItem
     }
 

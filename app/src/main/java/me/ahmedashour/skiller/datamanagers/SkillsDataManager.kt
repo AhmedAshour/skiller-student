@@ -19,8 +19,12 @@ class SkillsDataManager {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     temp = mutableListOf()
                     for (dataSnapshot1 in dataSnapshot.children) {
-                        val skill = dataSnapshot1.getValue(Skill::class.java)
-                        skill?.let { temp.add(it) }
+                        try {
+                            val skill = dataSnapshot1.getValue(Skill::class.java)
+                            temp.add(skill!!)
+                        } catch (e: DatabaseException) {
+                            Timber.e(e)
+                        }
                     }
                     skillsLiveData.value = temp
                     Timber.d("Skills Count: %s", skillsLiveData.value!!.size)
